@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FiAlignJustify, FiX } from "react-icons/fi";
 
 function Header() {
@@ -10,40 +11,66 @@ function Header() {
     <header className="header">
       <div className="container">
         <div className="header-wrapper">
-          <a href="" className="logo">
+          <Link to="home" smooth={true} duration={0} className="logo">
             Viktor
-          </a>
+          </Link>
+
           <nav className={openMenu ? "nav active" : "nav"}>
             <ul className={openMenu ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <a href="#home" className="nav-link active">
+                <Link to="home" smooth={true} duration={0} className="nav-link">
                   home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#about" className="nav-link">
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={0}
+                  className="nav-link"
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#skills" className="nav-link">
+                <Link
+                  to="skills"
+                  smooth={true}
+                  duration={0}
+                  className="nav-link"
+                >
                   Skills
-                </a>
+                </Link>
               </li>
               <li c="nav-item">
-                <a href="#services" className="nav-link">
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={0}
+                  className="nav-link"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#portfolio" className="nav-link">
+                <Link
+                  to="portfolio"
+                  smooth={true}
+                  duration={0}
+                  className="nav-link"
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#contact" className="nav-link">
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={0}
+                  className="nav-link"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

@@ -6,11 +6,9 @@ function PortfolioCard({ item }) {
 
   const openModal = () => {
     setActivModal(true);
-    console.log("211");
   };
   const closeModal = () => {
     setActivModal(false);
-    console.log("22");
   };
 
   return (

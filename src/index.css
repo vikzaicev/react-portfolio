@@ -979,7 +979,9 @@ main {
   margin-top: 0;
   margin-bottom: 40px;
 }
-
+.fa-solid {
+  margin-left: 5px;
+}
 /* === end Get-in-touct= section === */
 
 /* ======= Our Clients section ======= */

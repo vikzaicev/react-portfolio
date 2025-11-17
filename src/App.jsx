@@ -9,6 +9,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import ScrollToTop from "./components/ScrollTop/ScrollToTop";
 import Servises from "./components/Servises/Servises";
 import { Skills } from "./components/Skilss/Skilss";
+import ThemeBtn from "./components/ThemeBtn/ThemeBtn";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Contacs />
       <Footer />
       <ScrollToTop />
+      <ThemeBtn />
     </>
   );
 }

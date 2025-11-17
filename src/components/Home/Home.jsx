@@ -1,4 +1,4 @@
-import React from "react";
+import { FaFacebook, FaInstagramSquare, FaGithub } from "react-icons/fa";
 import manImg from "./../../img/main-img.webp";
 
 import { FiArrowRightCircle, FiArrowDown } from "react-icons/fi";
@@ -9,13 +9,13 @@ function Home() {
       <div className="container home-wrapper">
         <div className="media-icons">
           <a href="">
-            <i className="fa-brands fa-facebook-f"></i>
+            <FaFacebook />
           </a>
           <a href="">
-            <i className="fa-brands fa-instagram"></i>
+            <FaInstagramSquare />
           </a>
           <a href="">
-            <i className="fa-brands fa-github"></i>
+            <FaGithub />
           </a>
         </div>
         <div className="home-info">

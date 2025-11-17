@@ -1,0 +1,27 @@
+import { dataInfoFooter, datasocialFooter } from "../../utils/dataFooter";
+import FooterCrup from "./FooterCrup";
+
+function Footer() {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="footer">
+      <div className="container footer-wrapper">
+        <div className="about-group">
+          <h2>Viktor</h2>
+          <p>Frontend Developer</p>
+          <a href="#about">About me</a>
+        </div>
+        <div className="hr"></div>
+        <FooterCrup title="More" dataFooter={dataInfoFooter} />
+        <div className="hr"></div>
+        <FooterCrup title="Follow" dataFooter={datasocialFooter} isSocial />
+      </div>
+      <p className="footer-copyright">
+        © <span className="year">{currentYear}</span> by Coding Snow. All rights
+        reserved.
+      </p>
+    </footer>
+  );
+}
+
+export default Footer;

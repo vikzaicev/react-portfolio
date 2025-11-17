@@ -30,15 +30,7 @@ function Client() {
               ))}
             </div>
           </Swiper>
-
-          <div className="swiper-button-next">
-            <i className="fa-solid fa-chevron-right"></i>
-          </div>
-          <div className="swiper-button-prev">
-            <i className="fa-solid fa-chevron-left"></i>
-          </div>
         </div>
-        <div className="swiper-pagination"></div>
       </div>
     </section>
   );

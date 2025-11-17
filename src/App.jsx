@@ -1,5 +1,7 @@
 import About from "./components/About/About";
 import Client from "./components/Client/Client";
+import Contacs from "./components/Contacs/Contacs";
+import Footer from "./components/Footer/Footer";
 import GetIn from "./components/GetIn/GetIn";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -18,6 +20,8 @@ function App() {
       <Portfolio />
       <GetIn />
       <Client />
+      <Contacs />
+      <Footer />
     </>
   );
 }

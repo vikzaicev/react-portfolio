@@ -25,7 +25,7 @@ function Home() {
             I create stunning websites for your business, Highly experienced in
             web design and development
           </p>
-          <a href="" className="home-info-link inner-info-link">
+          <a href="#contact" className="home-info-link inner-info-link">
             Contact me
             <FiArrowRightCircle />
           </a>

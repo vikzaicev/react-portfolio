@@ -6,6 +6,7 @@ import GetIn from "./components/GetIn/GetIn";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
+import ScrollToTop from "./components/ScrollTop/ScrollToTop";
 import Servises from "./components/Servises/Servises";
 import { Skills } from "./components/Skilss/Skilss";
 
@@ -22,6 +23,7 @@ function App() {
       <Client />
       <Contacs />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

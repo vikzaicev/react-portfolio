@@ -29,3 +29,32 @@ function ScrollToTop() {
 }
 
 export default ScrollToTop;
+
+// .scrollToTop {
+//   position: fixed;
+//   right: 0px;
+//   bottom: 20px;
+//   width: 45px;
+//   height: 45px;
+//   background: var(--second-color);
+//   color: #fff;
+//   font-size: var(--small-font-size);
+//   border-radius: 3px;
+//   cursor: pointer;
+//   z-index: -1;
+//   box-shadow: var(--box-shadow);
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 0.3s linear;
+// }
+
+// .scrollToTop.flex-center {
+//   justify-content: center;
+// }
+
+// .scrollToTop.active {
+//   z-index: 10;
+//   opacity: 1;
+//   visibility: visible;
+//   right: 20px;
+// }

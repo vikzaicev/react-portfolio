@@ -1,16 +1,3 @@
-export const iconAnimation = {
-  hidden: { x: 50, opacity: 0 },
-  visible: (i) => ({
-    x: 0,
-    opacity: 1,
-    transition: {
-      delay: i * 0.2,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  }),
-};
-
 export const motionVariants = (
   direction = "left",
   duration = 0.5,
@@ -42,3 +29,16 @@ export const motionVariants = (
     },
   };
 };
+
+// import { motion } from "motion/react";
+// import { motionVariants } from "../../utils/animation";
+
+// <motion.h1
+//   custom={0}
+//   variants={motionVariants("left", 0.3, 50, true)}
+//   initial="hidden"
+//   whileInView="visible"
+//   viewport={{ once: false, amount: 0.5 }}
+// >
+//   Hi, I am Viktor
+// </motion.h1>;

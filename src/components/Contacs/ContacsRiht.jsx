@@ -1,27 +1,64 @@
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "motion/react";
+import { motionVariants } from "../../utils/animation";
 
 function ContacsRiht() {
   return (
     <div className="contact-right">
-      <p>
+      <motion.p
+        custom={0}
+        variants={motionVariants("left", 0.3, 50, true)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+      >
         I'm always open to discussing product{" "}
         <span>design work or partnerships.</span>
-      </p>
+      </motion.p>
       <form className="form contact-form">
-        <div className="first-row">
+        <motion.div
+          custom={1}
+          variants={motionVariants("left", 0.3, 50, true)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          className="first-row"
+        >
           <input placeholder="Name" type="text" />
-        </div>
-        <div className="second-row">
+        </motion.div>
+        <motion.div
+          custom={2}
+          variants={motionVariants("left", 0.3, 50, true)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          className="second-row"
+        >
           <input placeholder="Email" type="email" />
           <input placeholder="Subject" type="text" />
-        </div>
-        <div className="third-row">
+        </motion.div>
+        <motion.div
+          custom={3}
+          variants={motionVariants("left", 0.3, 50, true)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          className="third-row"
+        >
           <textarea placeholder="Message"></textarea>
-        </div>
-        <button className="contant-btn inner-info-link" type="submit">
+        </motion.div>
+        <motion.button
+          custom={4}
+          variants={motionVariants("left", 0.3, 50, true)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          className="contant-btn inner-info-link"
+          type="submit"
+        >
           Send Message
           <FaPaperPlane className="fa-solid" />
-        </button>
+        </motion.button>
       </form>
     </div>
   );

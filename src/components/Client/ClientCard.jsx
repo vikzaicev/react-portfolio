@@ -1,4 +1,5 @@
-import React from "react";
+import { motion } from "motion/react";
+import { motionVariants } from "../../utils/animation";
 
 function ClientCard({ item }) {
   return (
@@ -8,9 +9,33 @@ function ClientCard({ item }) {
           <img src={item.img} alt={item.title} />
         </div>
         <div className="client-details">
-          <p>{item.text}</p>
-          <h3>{item.title}</h3>
-          <span>{item.span}</span>
+          <motion.p
+            custom={1}
+            variants={motionVariants("right", 0.3, 50, true)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            {item.text}
+          </motion.p>
+          <motion.h3
+            custom={2}
+            variants={motionVariants("right", 0.3, 50, true)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            {item.title}
+          </motion.h3>
+          <motion.span
+            custom={3}
+            variants={motionVariants("right", 0.3, 50, true)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            {item.span}
+          </motion.span>
         </div>
       </div>
     </>

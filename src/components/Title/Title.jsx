@@ -1,10 +1,29 @@
-import React from "react";
+import { motion } from "motion/react";
+import { motionVariants } from "../../utils/animation";
 
 function Title({ title }) {
   return (
     <>
-      <h2 className="inner-title">{title}</h2>
-      <h3 className="inner-second-title">{title}</h3>
+      <motion.h2
+        custom={0}
+        variants={motionVariants("bottom", 0.3, 50, true)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        className="inner-title"
+      >
+        {title}
+      </motion.h2>
+      <motion.h3
+        custom={1}
+        variants={motionVariants("bottom", 0.3, 70, true)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        className="inner-second-title"
+      >
+        {title}
+      </motion.h3>
     </>
   );
 }

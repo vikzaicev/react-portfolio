@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "react-scroll";
 import { FiAlignJustify, FiX } from "react-icons/fi";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [sticky, setsticky] = useState(false);
   const toggleHandler = () => {
     setOpenMenu((prev) => !prev);
   };
+  const handleSticky = () => {
+    setsticky(window.scrollY > 0);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleSticky);
+    return () => {
+      window.removeEventListener("scroll", handleSticky);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={sticky ? "header sticky" : "header"}>
       <div className="container">
         <div className="header-wrapper">
           <Link to="home" smooth={true} duration={0} className="logo">

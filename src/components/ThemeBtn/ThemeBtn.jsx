@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaMoon, FaSun, FaThemeco } from "react-icons/fa";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 function ThemeBtn() {
   const [theme, setTheme] = useState(() => {
@@ -22,7 +22,7 @@ function ThemeBtn() {
       onClick={toogleTheme}
       aria-label="Toggle theme"
     >
-      {theme === "Light" ? <FaSun /> : <FaMoon />}
+      {theme === "Light" ? <FaMoon /> : <FaSun />}
     </button>
   );
 }
